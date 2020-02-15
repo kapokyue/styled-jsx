@@ -1,8 +1,8 @@
 {
-  "name": "styled-jsx",
-  "version": "3.2.3",
+  "name": "k-styled-jsx",
+  "version": "3.2.3-1",
   "license": "MIT",
-  "repository": "zeit/styled-jsx",
+  "repository": "kapokyue/styled-jsx",
   "description": "Full CSS support for JSX without compromises",
   "files": [
     "dist",

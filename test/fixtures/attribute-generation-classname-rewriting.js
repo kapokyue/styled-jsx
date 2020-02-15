@@ -1,5 +1,5 @@
 export default () => {
-  const Element = 'div'
+  // const Element = 'div'
   return (
     <div>
       <div className="test" {...test.test} />
@@ -47,9 +47,9 @@ export default () => {
       <div className="test" {...{ className: props.className }} {...bar} />
       <div className="test" {...bar} {...{ className: props.className }} />
       <div className="test" {...bar()} />
-      <Element />
+      {/* <Element />
       <Element className="test" />
-      <Element {...props} />
+      <Element {...props} /> */}
       <style jsx>{'div { color: red }'}</style>
     </div>
   )

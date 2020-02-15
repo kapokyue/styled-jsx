@@ -89,10 +89,10 @@ test('injects JSXStyle for nested scope', async t => {
   t.snapshot(code)
 })
 
-test('use external stylesheet and dynamic element', async t => {
-  const { code } = await transform('./fixtures/dynamic-element-external.js')
-  t.snapshot(code)
-})
+// test('use external stylesheet and dynamic element', async t => {
+//   const { code } = await transform('./fixtures/dynamic-element-external.js')
+//   t.snapshot(code)
+// })
 
 test('Makes sure that style nodes are not re-used', async t => {
   const { code } = await transformSource(
