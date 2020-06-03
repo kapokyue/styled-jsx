@@ -13,6 +13,7 @@ Code and docs are for v3 which we highly recommend you to try. Looking for style
 - [Configuration options](#configuration-options)
   * [`optimizeForSpeed`](#optimizeforspeed)
   * [`sourceMaps`](#sourcemaps)
+  * [`styleModule`](#stylemodule)
   * [`vendorPrefixes`](#vendorprefixes)
 - [Features](#features)
 - [How It Works](#how-it-works)
@@ -105,6 +106,10 @@ Beware that when using this option source maps cannot be generated and styles ca
 #### `sourceMaps`
 
 Generates source maps (default: `false`)
+
+#### `styleModule`
+
+Module that the transpiled files should import (default: `styled-jsx/style`)
 
 #### `vendorPrefixes`
 
@@ -388,7 +393,7 @@ duplicate styles are avoided.
 
 ### Content Security Policy
 
-Strict [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) is supported. 
+Strict [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) is supported.
 
 You should generate a nonce **per request**.
 ```js
@@ -1008,6 +1013,6 @@ If you're using `eslint-plugin-import`, the `css` import will generate errors, b
 
 ## Authors
 
-- Guillermo Rauch ([@rauchg](https://twitter.com/rauchg)) - [▲ZEIT](https://zeit.co)
-- Naoyuki Kanezawa ([@nkzawa](https://twitter.com/nkzawa)) - [▲ZEIT](https://zeit.co)
+- Guillermo Rauch ([@rauchg](https://twitter.com/rauchg)) - [▲Vercel](https://vercel.com)
+- Naoyuki Kanezawa ([@nkzawa](https://twitter.com/nkzawa)) - [▲Vercel](https://vercel.com)
 - Giuseppe Gurgone ([@giuseppegurgone](https://twitter.com/giuseppegurgone))
