@@ -291,8 +291,11 @@ export default function({ types: t }) {
           // possibly others so we traverse from here or else
           // dynamic values in classNames could be incorrect
           path.traverse(jsxVisitors, state)
+
+          // Transpile external styles
+          path.traverse(externalStylesVisitor, state)
         },
-        exit({ node, scope }, state) {
+        exit({ scope }, state) {
           if (
             !(
               state.file.hasJSXStyle &&
@@ -304,13 +307,9 @@ export default function({ types: t }) {
           }
 
           state.hasInjectedJSXStyle = true
-          const importDeclaration = createReactComponentImportDeclaration(state)
-          node.body.unshift(importDeclaration)
+          createReactComponentImportDeclaration(state)
         }
-      },
-
-      // Transpile external styles
-      ...externalStylesVisitor
+      }
     }
   }
 
