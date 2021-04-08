@@ -108,7 +108,7 @@ exports[`works with dynamic element 1`] = `
 export default (({ level = 1 }) => {
   const Element = \`h\${level}\`;
 
-  return <Element className={\\"jsx-1253978709\\" + \\" \\" + \\"root\\"}>
+  return <Element className={\\"root\\"}>
       <p className={\\"jsx-1253978709\\"}>dynamic element</p>
       <_JSXStyle id={\\"1253978709\\"}>{\\".root.jsx-1253978709{background:red;}\\"}</_JSXStyle>
     </Element>;
@@ -117,7 +117,7 @@ export default (({ level = 1 }) => {
 export const TestLowerCase = ({ level = 1 }) => {
   const element = \`h\${level}\`;
 
-  return <element className={\\"jsx-1253978709\\" + \\" \\" + \\"root\\"}>
+  return <element className={\\"root\\"}>
       <p className={\\"jsx-1253978709\\"}>dynamic element</p>
       <_JSXStyle id={\\"1253978709\\"}>{\\".root.jsx-1253978709{background:red;}\\"}</_JSXStyle>
     </element>;
@@ -138,7 +138,7 @@ export default class {
   render() {
     const Element = 'div';
 
-    return <Element className={'jsx-1800172487' + ' ' + 'root'}>
+    return <Element className={'root'}>
         <p className={\\"jsx-1800172487\\"}>dynamic element</p>
         <_JSXStyle id={\\"1800172487\\"}>{\\".root.jsx-1800172487{background:red;}\\"}</_JSXStyle>
       </Element>;

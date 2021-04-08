@@ -1,8 +1,8 @@
 {
-  "name": "styled-jsx",
+  "name": "k-styled-jsx",
   "version": "0.0.0-development",
   "license": "MIT",
-  "repository": "vercel/styled-jsx",
+  "repository": "kapokyue/styled-jsx",
   "description": "Full CSS support for JSX without compromises",
   "files": [
     "dist",
@@ -17,7 +17,7 @@
     "license.md"
   ],
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build": "yarn babel src --out-dir dist",
     "test": "ava",
     "lint": "xo",
     "prepublishOnly": "yarn build && yarn test && yarn lint --quiet"
